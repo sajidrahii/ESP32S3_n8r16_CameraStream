@@ -1,19 +1,19 @@
 #include <WiFi.h>
-#include "ESP32S3_n8r16_CameraStream.h"
+#include "ESP32S3CameraStream.h"
 
 // WiFi credentials
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
 
 // Create camera stream object
-ESP32S3_n8r16_CameraStream camera;
+ESP32CameraStream camera;
 
 void setup() {
     Serial.begin(115200);
     delay(1000);
     
     Serial.println("\nESP32 Camera Stream");
-    Serial.println("===================");
+    Serial.println("=====================");
     
     // Initialize camera
     if (!camera.begin()) {

@@ -1,4 +1,4 @@
-#include "ESP32S3_n8r16_CameraStream.h"
+#include "ESP32S3CameraStream.h"
 
 // Pin definitions for ESP32-S3-EYE
 #define PWDN_GPIO_NUM    -1
@@ -127,6 +127,7 @@ esp_err_t ESP32CameraStream::jpg_handler(httpd_req_t *req) {
         httpd_resp_send_500(req);
         return ESP_FAIL;
     }
+
     httpd_resp_set_type(req, "image/jpeg");
     httpd_resp_send(req, (const char *)fb->buf, fb->len);
     esp_camera_fb_return(fb);
