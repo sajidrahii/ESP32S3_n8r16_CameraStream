@@ -6,7 +6,7 @@ const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
 
 // Create camera stream object
-ESP32CameraStream camera;
+ESP32S3_n8r16_CameraStream camera;
 
 void setup() {
     Serial.begin(115200);
@@ -20,7 +20,7 @@ void setup() {
         Serial.println("Camera initialization failed!");
         return;
     }
-    
+
     Serial.println("Camera initialized successfully");
     
     // Connect to WiFi
