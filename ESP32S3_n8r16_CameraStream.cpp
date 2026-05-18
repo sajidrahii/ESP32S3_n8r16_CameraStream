@@ -162,11 +162,13 @@ esp_err_t ESP32CameraStream::stream_handler(httpd_req_t *req) {
     return ESP_OK;
 }
 
-void ESP32CameraStream::startServer() {
+void ESP32CameraStream::startServer(String ip) {
     if (!cameraInitialized) {
         Serial.println("Camera not initialized. Call begin() first.");
         return;
     }
+    
+    localIP = ip;
     
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     
