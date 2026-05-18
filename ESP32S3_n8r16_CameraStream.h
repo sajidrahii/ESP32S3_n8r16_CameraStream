@@ -13,7 +13,7 @@ public:
     bool begin();
     
     // Start the web server (call after WiFi is connected)
-    void startServer();
+    void startServer(String ip);
     
     // Get the local IP address
     String getLocalIP();

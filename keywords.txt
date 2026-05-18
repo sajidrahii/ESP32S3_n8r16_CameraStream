@@ -1,0 +1,18 @@
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+startServer	KEYWORD2
+getLocalIP	KEYWORD2
+getStreamURL	KEYWORD2
+getSnapshotURL	KEYWORD2
+setBrightness	KEYWORD2
+setSaturation	KEYWORD2
+setContrast	KEYWORD2
+setVerticalFlip	KEYWORD2
+setHorizontalMirror	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+ESP32CameraStream	KEYWORD2
